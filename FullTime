@@ -1,0 +1,23 @@
+public class FullTime extends Employee {
+
+    private double salary = 0.0;
+
+    public FullTime(){
+    }
+
+    public FullTime(String name, int id, double salary){
+        super(name, id);
+        this.salary = salary;
+    }
+
+    public void display(){
+        System.out.printf("The employees name is %s and their id number is %s%nand their salary is %.2f%n", getName(), getId(), this.salary);
+    }
+
+    public static void main(String[] args){
+        FullTime fullTimer = new FullTime("austin", 67711, 80000.0);
+        fullTimer.display();
+        System.out.printf(fullTimer.getName());
+    }
+
+}
