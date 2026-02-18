@@ -1,0 +1,22 @@
+public class PartTime extends Employee {
+
+    private Double hourlyWage = 0.0;
+
+    public PartTime(){
+    }
+
+    public PartTime(String name, int id, double hourlyWage){
+        this.hourlyWage = hourlyWage;
+    }
+
+    public void display(){
+        System.out.printf("The employees name is %s and their id number is %s%n and their salary is %f", this.getName(), this.getId(), this.hourlyWage);
+    }
+
+    public static void main(String[] args){
+        PartTime partTimer = new PartTime("austin", 67711, 22.30);
+        partTimer.display();
+        System.out.printf(partTimer.getName());
+    }
+
+}
